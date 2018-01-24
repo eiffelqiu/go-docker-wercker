@@ -31,6 +31,6 @@ func setHeaders(c *gin.Context) {
 func IndexPage(c *gin.Context) {
 	setHeaders(c)
 	content := gin.H{}
-	content["data"] = []string{"Grocery","Chocolate","Coffee","Bread"}
+	content["data"] = []string{"Chocolate","Coffee","Bread"}
 	c.JSON(200, content)
 }
